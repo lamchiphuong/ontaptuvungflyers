@@ -307,7 +307,7 @@
         let completedCount = 0;
         let lastHintCompletedTheWord = false; // MỚI: Đánh dấu lần hint cuối có làm hoàn thành từ không
         const totalWords = originalWords.length;
-        const duration = 30000;
+        const duration = 45000;
         let startTime = null;
         let timerInterval = null;
         let timeoutId = null;
@@ -393,7 +393,7 @@
             updateBoxes();
             messageDisplay.textContent = '';
 
-            let timeLeft = 30;
+            let timeLeft = 45;
             timerDisplay.textContent = timeLeft;
             clearInterval(timerInterval);
             timerInterval = setInterval(() => {
